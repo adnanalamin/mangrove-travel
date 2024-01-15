@@ -1,5 +1,226 @@
 /* =========================== Share Style ============================ */
 
 body {
-    font-family: "Mulish", sans-serif;
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  padding: 50px 135px;
+}
+
+.btn-primary {
+  padding: 16px;
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  width: 174px;
+  border: 0;
+}
+
+/* ================ Nav section ======================== */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.logo img {
+  width: 48px;
+  margin-right: 25px;
+  height: 56px;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+  margin-right: 44px;
+}
+nav li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: #424247;
+}
+.logo-title {
+  color: #131318;
+  font-size: 36px;
+  font-weight: 800;
+}
+.travel-title {
+  color: #ff5400;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.first-menu {
+  color: #ff5400;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ======================= Banner Style =============== */
+.banner {
+  
+  border-radius: 16px;
+  background: linear-gradient(
+    rgba(19, 19, 24, 0.8) 0%,
+    rgba(19, 19, 24, 0) 100%
+  );
+  background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner-title {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 800;
+  padding-top: 106px;
+}
+.banner-description {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.find-section {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.banner-information {
+  width: 700px;
+  margin: 0 auto;
+  padding: 106px 185px;
+}
+
+.find-section input {
+  border-radius: 8px;
+  background: #fff;
+  width: 174px;
+  border: 0;
+  color: rgba(19, 19, 24, 0.5);
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.find-section select {
+  border-radius: 8px;
+  background: #fff;
+  width: 174px;
+  border: 0;
+  color: rgba(19, 19, 24, 0.5);
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  padding-right: 14px;
+}
+.toggle {
+  font-size: 30px;
+  color: white;
+  display: none;
+  z-index: 1;
+}
+/* ===========our-popular-tours=================== */
+main {
+  padding: 50px 135px;
+}
+.our-popular-tours {
+  display: flex;
+  margin-top: 100px;
+  gap: 100px;
+  align-items: center;
+}
+.our-popular-tours-information{
+    width: 100%;
+  }
+.our-popular-tours-title {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.our-popular-tours-information p {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 24px;
+  line-height: 26px;
+}
+
+.our-popular-tours-information li {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 24px;
+  margin-left: 36px;
+  line-height: 26px;
+}
+
+/* ================= Mobile Responsive ================= */
+@media screen and (max-width: 600px) {
+  .toggle {
+    display: block;
+  }
+  header {
+    padding: 20px;
+  }
+  .banner {
+    
+    padding: 20px;
+  }
+  .logo img {
+    width: 65px;
+  }
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    margin-top: -900px;
+  }
+  nav.active {
+    margin-top: 0;
+  }
+  main {
+    padding: 20px 20px;
+  }
+  .find-section {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .banner-information {
+    padding: 20px;
+    width: 100%;
+  }
+  .find-section {
+    text-align: center;
+  }
+  .our-popular-tours{
+    flex-direction: column;
+    padding: 10px;
+    
+  }
+  .our-popular-tours-information{
+    max-width: 100%;
+  }
 }
