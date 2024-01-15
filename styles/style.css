@@ -75,14 +75,12 @@ nav li a {
 .banner {
   
   border-radius: 16px;
-  background: linear-gradient(
-    rgba(19, 19, 24, 0.8) 0%,
-    rgba(19, 19, 24, 0) 100%
-  );
-  background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+  background: linear-gradient(180deg,rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
+    url("../Images/Group\ 13\ \(1\)\ \(1\).png");
   text-align: center;
   background-size: cover;
   background-position: center center;
+  border-radius: 16px;
 }
 
 .banner-title {
@@ -102,6 +100,7 @@ nav li a {
   display: flex;
   gap: 24px;
   justify-content: center;
+  padding: 16px;
 }
 
 .banner-information {
@@ -181,11 +180,11 @@ main {
     display: block;
   }
   header {
-    padding: 20px;
+    padding: 10px;
   }
   .banner {
     
-    padding: 20px;
+    padding: 10px;
   }
   .logo img {
     width: 65px;
@@ -200,13 +199,16 @@ main {
   nav.active {
     margin-top: 0;
   }
+  .banner-description {
+    padding: 10px;
+    text-align: center;
+  }
   main {
     padding: 20px 20px;
   }
   .find-section {
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
+    margin: 0 auto;
   }
   .banner-information {
     padding: 20px;
