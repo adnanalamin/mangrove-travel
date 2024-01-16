@@ -370,7 +370,7 @@ footer {
 }
 
 .deals {
-  background-image: url('/Images/Group39.png');
+  background-image: url("../Images/Group39.png");
   background-repeat: no-repeat;
   width: 100%;
   background-position: center center;
@@ -403,7 +403,7 @@ footer {
   color: rgba(255, 84, 0, 1);
 }
 .deals-2 {
-  background-image: url('/Images/Group40.png');
+  background-image: url("../Images/Group40.png");
   background-repeat: no-repeat;
   width: 100%;
   background-position: center center;
