@@ -465,6 +465,38 @@ font-weight: 800;
 font-size: 20px;
 font-weight: 800;
 }
+.perfect-place {
+  display: flex;
+  margin-top: 100px;
+  gap: 100px;
+  align-items: center;
+}
+.perfect-place-information {
+  width: 100%;
+}
+.perfect-place-title {
+  color: #131318;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.perfect-place-information p {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 24px;
+  line-height: 26px;
+}
+
+.perfect-place-information li {
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 24px;
+  margin-left: 36px;
+  line-height: 26px;
+}
 /* ================= Mobile Responsive ================= */
 @media screen and (max-width: 600px) {
   .toggle {
@@ -606,5 +638,15 @@ font-weight: 800;
   .deals-header {
     width: 80%;
     text-align: center;
+  }
+  .perfect-place {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .perfect-place img {
+    width: 100%;
+  }
+  .our-popular-tours img {
+    width: 100%;
   }
 }
